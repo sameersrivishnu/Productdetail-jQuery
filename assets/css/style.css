@@ -1,0 +1,134 @@
+ body {
+     width:auto;
+     height: 100%;
+     margin: 0;
+}
+/* Nav bar code*/
+ .tabs{
+     margin-top: -10px;
+     width: 100%;
+     padding: 0px;
+}
+ .navbar button{
+     text-align: center;
+     color: black;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 20px 16px;
+     font-size: 17px;
+}
+ button.current{
+     border-bottom: 2px solid #ee7600!important;
+     color: black;
+     font-weight: bold;
+}
+ .tab-content{
+     display: none;
+     color:black;
+}
+ .tab-content.current{
+}
+ .navbar-header .col-sm-1 {
+     margin-top: -15px;
+     margin-left:-50px;
+}
+ .navbar .glyphicon-shopping-cart {
+     font-size: 30px!important;
+     margin-top: 15px;
+     float: right;
+}
+/* Offer alertbox code*/
+ #hide2 {
+     background-color: #c1ffc1;
+     padding: 10px;
+     margin-top: -30px;
+     margin-bottom: 20px;
+     color:#006400;
+}
+ #hide{
+     float: right;
+     cursor: pointer;
+}
+/* Magnifier code*/
+ .in {
+     width:70px;
+     height:70px;
+     margin: 5px;
+     border-width: 1px;
+     border-color: skyblue;
+     border-style: solid;
+}
+ .active{
+     border-color:green;
+     border-style: solid;
+     border-width: 1px;
+}
+ .images .col-md-5 img {
+     width:300px;
+     height:300px;
+     position: relative;
+}
+ .im {
+     margin-left: 100px;
+     display:none;
+}
+ .mag {
+     width:400px;
+     height: 400px;
+     float:none;
+     position:absolute;
+}
+ .mag img {
+     max-width: 100%;
+}
+ .magnify {
+     position:absolute;
+     cursor: none 
+}
+ .magnify-large {
+     position: absolute;
+     display: none;
+     width: 400px;
+     height:500px;
+}
+ img.im.active {
+     display: inline;
+}
+/*  Product code controls*/
+ .prev{
+  font-size: 20px;
+}
+.next{
+ font-size: 20px;
+}
+.slide img
+{
+  padding-left: 40px;
+  width:150px;
+  height:150px;
+}
+.slide .next{
+  padding-left: 20px;
+}
+
+/* On smaller screens, decrease text size */
+ @media screen and (max-width: 660px) {
+    .im {
+     margin:0;
+     
+}
+.col-md-5 .mag{
+     width:200px;
+     height: 200px;
+}
+.magnify-large {
+    
+     width: 300px;
+     height:300px;
+     }
+     #card{
+        width:280px;
+     }
+}

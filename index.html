@@ -1,0 +1,123 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <meta charset="UTF-8">
+      <meta name="description" content="jQuery Product details">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,jQuery">
+      <meta name="author" content="Sameer">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <title>Product details</title>
+   </head>
+   <body>
+   <!-- Nav bar Content -->
+      <nav class="navbar col-sm-12">
+         <div class="navbar-header">
+            <a class="col-sm-1"><img src="assets/images/151636312023563076.png" height="100" width="150"></a>
+         </div>
+         <ul class="tabs">
+            <button class="tab-link current col-sm-1" data-tab="tab-1" >McTyler</button>
+            <button class="tab-link col-sm-1" data-tab="tab-2" >Passion</button>
+            <button class="tab-link col-sm-1" data-tab="tab-3" > Special</button>
+         </ul>
+         <div class="col-sm-3"></div>
+         <form class="navbar-form col-sm-3" role="search">
+            <div class="input-group">
+               <input type="text" class="form-control" style="margin-top: 10px;" placeholder="Search this site" >
+               <span class="input-group-btn">
+               <button type="submit" class="btn btn-default" style="padding:9px;margin-top: 9px;background-color: grey;">
+               <span class="glyphicon glyphicon-search" ></span>
+               </button>
+               </span>
+            </div>
+         </form>
+         <button >Help</button>
+         <span class="glyphicon glyphicon-shopping-cart col-sm-1"></span>
+      </nav>
+      <!-- Nav bar Contents -->
+      <div id="tab-1" class="tab-content"></div>
+      <div id="tab-2" class="tab-content"></div>
+      <div id="tab-3" class="tab-content"></div>
+      <!-- Offer alertbox Content -->
+      <div id="hide2" class="col-sm-12">
+         <p> Get <b>10%</b> offer on orders over $400.00. Your discount will be reflected at checkout. <b id="hide" >X</b> </p>
+      </div>
+      <!-- Images details -->
+      <div class="images col-md-12">
+         <div class="col-md-1">
+            <div>
+               <img src="assets/images/l10.jpg" class="in " id="img1">
+               <img src="assets/images/l9.jpg" class="in" id="img2">
+               <img src="assets/images/l8.jpg" class="in" id="img3">
+               <img src="assets/images/l7.jpg" class="in" id="img4">
+               <img src="assets/images/l6.jpg" class="in" id="img5">
+               <img src="assets/images/l5.jpg" class="in" id="img6">
+               <img src="assets/images/l4.jpg" class="in" id="img7">
+               <img src="assets/images/l3.jpeg" class="in" id="img8">
+               <img src="assets/images/l2.jpg" class="in" id="img9">
+               <img src="assets/images/l1.png" class="in" id="img10">
+            </div>
+         </div>
+         <div class="col-md-5 mag">
+               <div>
+                  <img data-toggle="magnify" src="assets/images/l10.jpg" class="im active" id="imgg1" >
+                  <img data-toggle="magnify" src="assets/images/l9.jpg" class="im" id="imgg2"  >
+               </div>
+               <div>
+                  <img data-toggle="magnify" src="assets/images/l8.jpg" class="im" id="imgg3"  >
+                  <img data-toggle="magnify" src="assets/images/l7.jpg" class="im" id="imgg4"  >
+               </div>
+               <div>
+                  <img data-toggle="magnify" src="assets/images/l6.jpg" class="im" id="imgg5"  >
+                  <img data-toggle="magnify" src="assets/images/l5.jpg" class="im" id="imgg6"  >
+               </div>
+               <div>
+                  <img data-toggle="magnify" src="assets/images/l4.jpg" class="im" id="imgg7"  >
+                  <img data-toggle="magnify" src="assets/images/l3.jpeg" class="im" id="imgg8"  >
+               </div>
+               <div>
+                  <img data-toggle="magnify" src="assets/images/l2.jpg" class="im" id="imgg9"  >
+                  <img data-toggle="magnify" src="assets/images/l1.png" class="im" id="imgg10"  >
+               </div>
+         </div>
+         <div class="col-md-6">
+            <h1 style="margin-top: -10px;">Laptop</h1>
+            <img id="card" src="assets/images/card.png">
+            <p>We use encrypted SSL security to ensure that your credit card information is 100% protected.</p>
+            <b>HOW TO ORDER?</b>
+            <p>1. Select Product,Specifications and <b>COLOR</b> 2. Select<b> SIZE</b> and quantity.</p>
+            <p>3. Click<b> "Add to Cart"</b> 4. Enter shipping and billing information</p>
+            <p><b>Tip:</b> Buy 2 or more and save 80% on shipping</p>
+            <b>U.S.A Printing - Worldwide Shiping With 100% satisfaction guarantee</b>
+            <p>Call Support (1-855-999-7840) Monday-Friday 9AM-5PM (PST)</p>
+            <p>Email: <a>support@mctyler.com</a></p>
+            <p><b>Browse other design:<b><a> mctyler.com</a></p>
+              <!-- Product details Content -->
+            <div class="well">
+               <p>Choose your Product</p>
+               <div id="slider">
+                  <div class="slide"> <ul>
+                     <li style="display: inline-block;">
+                        <img src="assets/images/l10.jpg"  id="image1" >
+                        <img src="assets/images/l8.jpg"  id="image2" >
+                        <img src="assets/images/l6.jpg"  id="image3" >
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     </li> </ul>
+                   </div>
+                   <div class="slide">
+                    <ul style="list-style: none;">
+                     <li>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <img src="assets/images/l4.jpg"   id="image4" >
+                        <img src="assets/images/l2.jpg"  id="image5">
+                    </li>
+                  </ul></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="assets/js/script.js"></script> 
+</html>
+
